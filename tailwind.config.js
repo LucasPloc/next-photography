@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,6 +10,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'bcg-img': "url('/photography-bg.jpg')",
+      },
+      fontFamily: {
+        sans: ['var(--font-expletus)', ...fontFamily.sans],
       },
     },
   },
